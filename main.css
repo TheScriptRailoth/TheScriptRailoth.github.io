@@ -81,10 +81,10 @@ a:hover {
     max-width: 520px;
     padding: 32px;
     line-height: 1.6em;
-    background-color: #242424; /* Slightly lighter dark background for the content box */
-    color: #e0e0e0; /* Ensuring text inside #content is also light colored */
-    border-radius: 8px; /* Optional: adds rounded corners to the content box */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Optional: adds a subtle shadow to enhance visibility */
+    background-color: #242424; 
+    color: #e0e0e0;
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); 
 }
 
 .avatar {
@@ -94,7 +94,7 @@ a:hover {
     object-fit: contain;
     display: block;
     margin: 0 auto;
-    border: 3px solid #bb86fc; /* Optional: adds a border color that stands out in dark mode */
+    border: 3px solid #bb86fc; 
 }
 
 .icons {
@@ -106,7 +106,7 @@ a:hover {
     width: 80%;
     max-width: 320px;
     margin: 1em auto;
-    color: #e0e0e0; /* Changing icon color to be lighter for dark mode */
+    color: #e0e0e0;
 }
 
 .icons li {
@@ -115,9 +115,9 @@ a:hover {
 }
 
 .icons a {
-    color: #e0e0e0; /* Light color for icons */
+    color: #e0e0e0; 
 }
 
 .icons a:hover {
-    color: #bb86fc; /* Light purple for icons on hover */
+    color: #bb86fc; 
 }
