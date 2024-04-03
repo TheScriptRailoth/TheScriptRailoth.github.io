@@ -1,7 +1,6 @@
+
 <!DOCTYPE html>
-
 <html lang="en">
-
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
@@ -37,59 +36,56 @@
       crossorigin="anonymous"
     />
   </head>
+<body>
 
-  <body>
+<input type="checkbox" id="toggle_checkbox" style="position: fixed; top: 20px; right: 20px; z-index: 1000;">
+<label for="toggle_checkbox" style="position: fixed; top: 20px; right: 50px; z-index: 1000;">
+  <div id="star">
+    <div class="star" id="star-1">★</div>
+    <div class="star" id="star-2">★</div>
+  </div>
+  <div id="moon"></div>
+</label>
 
-    <!-- <button id="theme-toggle" style="position: fixed; top: 20px; right: 20px; z-index: 1000;">Switch Theme</button> -->
-    
-    <input type="checkbox" id="toggle_checkbox">
-    <label for="toggle_checkbox">
-      <div id="star">
-        <div class="star" id="star-1">★</div>
-        <div class="star" id="star-2">★</div>
-      </div>
-      <div id="moon"></div>
-    </label>
+<section id="content">
+  <!-- Avatar image -->
+  <img src="image.jpg" alt="Ashutosh" class="avatar" />
 
-    <section id="content">
-      <!-- Avatar image -->
-      <img src="image.jpg" alt="Ashutosh" class="avatar" />
+  <!-- Text -->
+  <h1>Hi, I'm Ashutosh Mishra!</h1>
+  <p>
+    I am a B.Tech. student in Jaypee University of Engineering & Technology, Guna.
+  </p>
+  <p>
+    Most of my current research is driven by trying to find an answer to the age-old question of “Who is a good boy?"
+  </p>
+  <p>
+    Please feel free to get in touch!
+  </p>
 
-      <!-- Text -->
-      <h1>Hi, I'm Ashutosh Mishra!</h1>
-      <p>
-        I am a B.Tech. student in Jaypee University of Engineering & Technology, Guna.
-      </p>
-      <p>
-        Most of my current research is driven by trying to find an answer to the age-old question of “Who is a good boy?"
-      </p>
-      <p>
-        Please feel free to get in touch!
-      </p>
+  <!-- Icons -->
+  <ul class="icons">
+    <li>
+      <a href="" title="Institutional website"><i class="fas fa-university"></i></a>
+    </li>
+    <li>
+      <a href="" title="E-Mail"><i class="fas fa-envelope"></i></a>
+    </li>
+    <li>
+      <a href="" title="GitHub"><i class="fab fa-github"></i></a>
+    </li>
+    <li>
+      <a href="" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+    </li>
+    <li>
+      <a href="" title="NASA / ADS"><i class="ai ai-ads"></i></a>
+    </li>
+    <li>
+      <a href="" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
+    </li>
+  </ul>
+</section>
 
-      <!-- Icons -->
-      <ul class="icons">
-        <li>
-          <a href="" title="Institutional website"><i class="fas fa-university"></i></a>
-        </li>
-        <li>
-          <a href="" title="E-Mail"><i class="fas fa-envelope"></i></a>
-        </li>
-        <li>
-          <a href="" title="GitHub"><i class="fab fa-github"></i></a>
-        </li>
-        <li>
-          <a href="" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-        </li>
-        <li>
-          <a href="" title="NASA / ADS"><i class="ai ai-ads"></i></a>
-        </li>
-        <li>
-          <a href="" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
-        </li>
-      </ul>
-    </section>
-  </body>
-
-  <script src="script.js"></script> 
+<script src="script.js"></script>
+</body>
 </html>
