@@ -1,4 +1,4 @@
-html {
+/* html {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: larger;
     font-weight: 300;
@@ -52,4 +52,68 @@ a:hover {
 
 .icons a:hover {
     color: #1565c0;
+} */
+
+html {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: larger;
+    font-weight: 300;
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Lighter text for better readability */
+}
+
+a {
+    text-decoration: none;
+    color: #bb86fc; /* Light purple, for links to stand out */
+}
+
+a:hover {
+    color: #3700B3; /* Dark purple on hover */
+}
+
+#content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    max-width: 520px;
+    padding: 32px;
+    line-height: 1.6em;
+    background-color: #242424; /* Slightly lighter dark background for the content box */
+    color: #e0e0e0; /* Ensuring text inside #content is also light colored */
+    border-radius: 8px; /* Optional: adds rounded corners to the content box */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Optional: adds a subtle shadow to enhance visibility */
+}
+
+.avatar {
+    border-radius: 50%;
+    width: 150px;
+    border: 3px solid #bb86fc; /* Optional: adds a border color that stands out in dark mode */
+}
+
+.icons {
+    list-style-type: none;
+    font-size: xx-large;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 320px;
+    margin: 1em auto;
+    color: #e0e0e0; /* Changing icon color to be lighter for dark mode */
+}
+
+.icons li {
+    display: inline;
+    width: 42px;
+}
+
+.icons a {
+    color: #e0e0e0; /* Light color for icons */
+}
+
+.icons a:hover {
+    color: #bb86fc; /* Light purple for icons on hover */
 }
