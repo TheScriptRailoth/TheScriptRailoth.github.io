@@ -1,75 +1,82 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Define title -->
+    <title>TheScriptRailoth</title>
+
+    <!-- Include favicon. Use, e.g., https://favicon.io/ -->
+    <link rel="icon" type="image/png" href="favicon.png" sizes="32x32" />
+
+    <!-- Include style sheets -->
+    <link rel="stylesheet" href="main.css" />
+
+    <!-- Fonts from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;600&display=swap" rel="stylesheet" />
+
+    <!-- Load FontAwesome (for icons) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+    />
+
+    <!-- Load Academicons (for more icons) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.2/css/academicons.min.css"
+      integrity="sha512-KlJCpRsLf+KKu2VQa5vmRuClRFjxc5lXO03ixZt82HZUk41+1I0bD8KBSA0fY290ayMfWYI9udIqeOWSu1/uZg=="
+      crossorigin="anonymous"
+    />
   </head>
+
   <body>
-    <nav id="desktop-nav">
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Ashutosh Mishra</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img class="circular-img" src="./assets/my-profile.jpg" alt="Ashutosh Mishra profile picture" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Ashutosh Mishra</h1>
-        <p class="section__text__p2">Developer</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('mailto: am3718440@gmai.com')"
-          >
-            Hire Me
-          </button>
-          <button class="btn btn-color-1" onclick="window.open('https://t.me/TheScriptRailoth')">
-            Send Message
-          </button>
-          
-        </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/thescriptrailoth/'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/TheScriptRailoth'"
-          />
-      
-          <img
-            src="./assets/twitter.png"
-            alt="My Twitter"
-            class="icon"
-            onclick="location.href='https://twitter.com/the_ashutosh___'"
-          />
-        </div>
-      </div>
+    <section id="content">
+      <!-- Avatar image -->
+      <img src="image.jpg" alt="Ashutosh" class="avatar" />
+
+      <!-- Text -->
+      <h1>Hi, I'm Ashutosh Mishra!</h1>
+      <p>
+        I am a B.Tech. student in Jaypee University of Engineering & Technology, Guna.
+      </p>
+      <p>
+        Most of my current research is driven by trying to find an answer to the age-old question of “Who is a good boy?"
+      </p>
+      <p>
+        Please feel free to get in touch!
+      </p>
+
+      <!-- Icons -->
+      <ul class="icons">
+        <li>
+          <a href="" title="Institutional website"><i class="fas fa-university"></i></a>
+        </li>
+        <li>
+          <a href="" title="E-Mail"><i class="fas fa-envelope"></i></a>
+        </li>
+        <li>
+          <a href="" title="GitHub"><i class="fab fa-github"></i></a>
+        </li>
+        <li>
+          <a href="" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        </li>
+        <li>
+          <a href="" title="NASA / ADS"><i class="ai ai-ads"></i></a>
+        </li>
+        <li>
+          <a href="" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
+        </li>
+      </ul>
     </section>
-    <script src="script.js"></script>
   </body>
+ 
 </html>
