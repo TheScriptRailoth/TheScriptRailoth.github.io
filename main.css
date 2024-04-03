@@ -12,7 +12,7 @@
     --background-color: #121212; /* Dark background */
     --text-color: #e0e0e0; /* Lighter text for better readability */
     --link-color: #bb86fc; /* Light purple, for links to stand out */
-    --link-hover-color: #3700B3; /* Dark purple on hover */
+    --link-hover-color: #bb86fc; /* Dark purple on hover */
     --content-bg-color: #242424; /* Darker content background */
     --border-avatar-color: #bb86fc; /* Light purple border for the avatar */
 }
@@ -54,7 +54,7 @@ a:hover {
     border-radius: 50%;
     width: 200px;
     height: 200px;
-    object-fit: cover; /* Changed from 'contain' to 'cover' for a better fit */
+    object-fit: contain;
     display: block;
     margin: 0 auto;
     border: 3px solid var(--border-avatar-color);
@@ -91,117 +91,93 @@ a {
 }
 
 a:hover {
-    color: #3700B3; /* Dark purple on hover */
+    color: #bb86fc; /* Dark purple on hover */
 }
 
-#toggle_checkbox
-{
+#toggle_checkbox {
     display: none;
 }
 
-label
-{
+label {
     display: block;
     position: absolute;
-    top: 50%;
-    right: 0;
-    left: 0;
-    width: 116px;
-    height: 56px;
+    top: 20%; /* Adjust if needed */
+    right: 20%; /* Adjust if needed */
+    width: 80px; /* Reduced size */
+    height: 40px; /* Reduced size */
     margin: 0 auto;
     background-color: #77b5fe;
-    border-radius: 56px;
-    transform: translateY(-50%);
+    border-radius: 40px; /* Adjusted for new size */
     cursor: pointer;
     transition: 0.3s ease background-color;
     overflow: hidden;
 }
 
-#star
-{
+#star {
     position: absolute;
-    top: 13px;
-    left: 13px;
-    width: 30px;
-    height: 30px;
+    top: 10px; /* Adjusted for reduced size */
+    left: 10px; /* Adjusted for reduced size */
+    width: 20px; /* Reduced size */
+    height: 20px; /* Reduced size */
     background-color: #fafd0f;
-    transform: scale(1);
     border-radius: 50%;
-    transition: 0.3s ease top, 0.3s ease left, 0.3s ease transform, 0.3s ease background-color;
+    transition: 0.3s ease all; /* Simplified transition */
     z-index: 1;
 }
 
-#star-1
-{
+.star {
     position: relative;
+    left: -5px; /* Adjusted for new size */
+    font-size: 30px; /* Adjusted for new size */
+    line-height: 20px; /* Adjusted for new size */
+    color: #fafd0f;
 }
 
-#star-2
-{
-    position: absolute;
+#star-2 {
     transform: rotateZ(36deg);
 }
 
-.star
-{
-    top: 0;
-    left: -7px;
-    font-size: 54px;
-    line-height: 28px;
-    color: #fafd0f;
-    transition: 0.3s ease color;
-}
-
-#moon
-{
+#moon {
     position: absolute;
-    bottom: -52px;
-    right: 8px;
-    width: 40px;
-    height: 40px;
+    bottom: -35px; /* Adjusted for new size */
+    right: 5px; /* Adjusted for new size */
+    width: 20px; /* Reduced size */
+    height: 20px; /* Reduced size */
     background-color: #fff;
     border-radius: 50%;
-    transition: 0.3s ease bottom;
 }
 
-#moon:before
-{
+#moon:before {
     content: "";
     position: absolute;
-    top: -12px;
-    left: -17px;
-    width: 40px;
-    height: 40px;
-    background-color:#03a9f4;
+    top: -6px; /* Adjusted for new size */
+    left: -10px; /* Adjusted for new size */
+    width: 20px; /* Reduced size */
+    height: 20px; /* Reduced size */
+    background-color: #03a9f4;
     border-radius: 50%;
-    transition: 0.3s ease background-color;
 }
 
-#toggle_checkbox:checked + label
-{
+#toggle_checkbox:checked + label {
     background-color: #000;
 }
 
-#toggle_checkbox:checked + label #star
-{
-    top: 3px;
-    left: 64px;
-    transform: scale(0.3);
-    background-color: yellow;
+#toggle_checkbox:checked + label #star {
+    top: 2px; /* Adjusted for reduced size */
+    left: 50px; /* Adjusted for reduced size */
+    transform: scale(0.5); /* Adjusted scale for visible transition */
 }
 
-#toggle_checkbox:checked + label .star
-{
+#toggle_checkbox:checked + label .star {
     color: yellow;
 }
 
-#toggle_checkbox:checked + label #moon
-{
-    bottom: 8px;
+#toggle_checkbox:checked + label #moon {
+    bottom: 10px; /* Adjusted to be more visible */
 }
 
-#toggle_checkbox:checked + label #moon:before
-{
+#toggle_checkbox:checked + label #moon:before {
     background-color: #000;
 }
+
 
